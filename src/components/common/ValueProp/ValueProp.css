@@ -1,0 +1,42 @@
+.prop-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-prop-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.value-prop-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.prop-icon {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: var(--upwork-green); /* Koristimo zelenu za akcenat čak i na fiktivnim ikonama */
+}
+
+.prop-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.prop-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}

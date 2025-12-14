@@ -1,0 +1,105 @@
+.profile-header-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.profile-top-section {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+    border: 3px solid var(--upwork-green);
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-name {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0 0 5px 0;
+}
+
+.profile-title {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.profile-location {
+    font-size: 16px;
+    color: #666;
+}
+
+/* STATISTIKA BAR */
+.profile-stats-bar {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #444;
+}
+
+.stat-icon {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.stat-item.verification {
+    font-weight: 600;
+}
+
+.stat-item.verified {
+    color: var(--upwork-green);
+}
+
+/* DUGMAD */
+.profile-action-btns {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-btn, .favorite-btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.contact-btn {
+    background-color: var(--upwork-green);
+    color: white;
+    border: none;
+}
+
+.favorite-btn {
+    background-color: transparent;
+    color: var(--upwork-green);
+    border: 1px solid var(--upwork-green);
+}
+
+.contact-btn:hover, .favorite-btn:hover {
+    opacity: 0.9;
+}

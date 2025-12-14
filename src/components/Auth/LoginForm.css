@@ -1,0 +1,92 @@
+:root {
+    --upwork-green: #108a00;
+    --upwork-light-gray: #f3f3f3;
+    --border-color: #e4e4e4;
+    --text-dark: #333;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px); /* Oduzimanje visine Headera */
+    background-color: var(--upwork-light-gray);
+    padding: 20px;
+}
+
+.auth-box {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.auth-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: var(--text-dark);
+}
+
+.auth-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ključno za padding */
+}
+
+/* Dugme za prijavu */
+.auth-submit-btn {
+    width: 100%;
+    background-color: var(--upwork-green);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 25px; /* Zaobljeno */
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.auth-submit-btn:hover {
+    background-color: #0d6e00;
+}
+
+.auth-footer {
+    margin-top: 25px;
+    font-size: 15px;
+    color: #666;
+}
+
+.switch-link-btn {
+    background: none;
+    border: none;
+    color: var(--upwork-green);
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 5px;
+    font-weight: 500;
+}

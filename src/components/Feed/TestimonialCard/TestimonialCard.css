@@ -1,0 +1,50 @@
+.testimonial-card {
+    background: #f7f9fb; /* Svetlo siva pozadina za svedočanstva */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 450px;
+    margin: 20px;
+    text-align: left;
+}
+
+.star-rating {
+    color: gold; /* Očigledna boja za zvezdice */
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.testimonial-quote {
+    font-style: italic;
+    font-size: 18px;
+    color: var(--text-dark);
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.author-info {
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+}
+
+.author-name {
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+.author-title {
+    font-size: 14px;
+    color: #888;
+    margin: 5px 0 0 0;
+}
+
+/* PRIMER LAYOUTA ZA SLIDER (može se primeniti na roditeljski element) */
+.testimonial-slider-container {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto; /* Omogućuje klizanje ako je više kartica */
+    padding: 40px 0;
+}

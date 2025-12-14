@@ -1,0 +1,124 @@
+.talent-card-container {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    background-color: white;
+    transition: box-shadow 0.3s;
+}
+
+.talent-card-container:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.talent-header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.talent-profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.talent-info {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.talent-name a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #14a800; /* Upwork zelena za link */
+    margin: 0 0 5px 0;
+    text-decoration: none;
+}
+
+.talent-name a:hover {
+    text-decoration: underline;
+}
+
+.talent-title {
+    font-size: 15px;
+    color: #4a4a4a;
+    margin: 3px 0;
+}
+
+.talent-location {
+    font-size: 14px;
+    color: #6d6d6d;
+}
+
+.save-talent-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #aaa;
+    align-self: flex-start;
+}
+
+/* DETALJI I CENA */
+.talent-details-meta {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.detail-item-talent {
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.talent-tagline {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+/* VEŠTINE */
+.talent-skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.talent-skill-tag {
+    background-color: #e4e6eb;
+    color: #5e6d55;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* AKCIJE DUGMAD */
+.talent-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.invite-btn, .profile-btn {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.invite-btn {
+    background-color: var(--upwork-green);
+    color: white;
+    border: none;
+}
+
+.profile-btn {
+    background-color: transparent;
+    color: var(--upwork-green);
+    border: 1px solid var(--upwork-green);
+}

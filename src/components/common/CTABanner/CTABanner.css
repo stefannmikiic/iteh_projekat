@@ -1,0 +1,41 @@
+.cta-banner-container {
+    background-color: var(--upwork-green);
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+    margin: 50px 0; /* Odvajanje od ostalog sadržaja */
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.cta-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.cta-btn-main {
+    background: white;
+    color: var(--upwork-green);
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+.cta-btn-main:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}

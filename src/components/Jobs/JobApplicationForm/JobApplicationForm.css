@@ -1,0 +1,101 @@
+.application-form-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.app-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-dark, #333);
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border-color, #e4e4e4);
+    padding-bottom: 15px;
+}
+
+.section-bid, .section-cover-letter, .section-attachments {
+    margin-bottom: 40px;
+}
+
+.section-bid h3, .section-cover-letter h3, .section-attachments h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-dark, #333);
+    margin-bottom: 15px;
+}
+
+/* BID GRID STIL */
+.bid-grid {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.bid-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.bid-row label {
+    font-weight: 500;
+}
+
+.bid-row input {
+    width: 150px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: right;
+}
+
+.bid-row:last-child {
+    border-bottom: none;
+}
+
+.fee-info {
+    color: #666;
+}
+
+.final-row label, .final-row .receive-amount {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--upwork-green, #108a00);
+}
+
+/* COVER LETTER STIL */
+.section-cover-letter textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.section-attachments .attachment-note {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* SUBMIT DUGME */
+.submit-proposal-btn {
+    width: 100%;
+    background-color: var(--upwork-green);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}

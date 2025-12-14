@@ -1,0 +1,35 @@
+/* BrowseJobsPage.css */
+.jobs-page-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Sidebar */
+.sidebar-area {
+  flex: 1 1 250px;
+  min-width: 200px;
+}
+
+/* Job list area */
+.job-list-area {
+  flex: 3 1 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.job-list-area h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+@media (max-width: 768px) {
+  .jobs-page-layout {
+    flex-direction: column;
+  }
+
+  .sidebar-area, .job-list-area {
+    flex: 1 1 100%;
+  }
+}

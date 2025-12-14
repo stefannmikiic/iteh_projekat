@@ -1,0 +1,201 @@
+:root {
+  --upwork-green: #108a00;
+  --upwork-light-gray: #f9f9f9;
+  --border-color: #e4e4e4;
+  --text-dark: #333;
+  --text-gray: #5e6d55;
+  --sidebar-width: 280px;
+}
+
+/* ======================== */
+/* SIDEBAR KONTEJNER        */
+/* ======================== */
+.upwork-sidebar-container {
+  width: var(--sidebar-width);
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  font-family: 'Arial', sans-serif;
+}
+
+.upwork-sidebar-container h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* ======================== */
+/* FILTER SECTIONS          */
+/* ======================== */
+.filter-section {
+  margin-bottom: 25px;
+}
+
+.filter-section h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+/* CHECKBOX & RADIO */
+.filter-checkbox-label,
+.filter-radio-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.filter-checkbox-label input[type="checkbox"],
+.filter-radio-label input[type="radio"] {
+  margin-right: 12px;
+  accent-color: var(--upwork-green);
+}
+
+/* “More” dugme */
+.more-link {
+  background: none;
+  border: none;
+  color: var(--upwork-green);
+  font-size: 14px;
+  margin-top: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.more-link:hover {
+  color: #0d6e00;
+}
+
+/* DIVIDER */
+.sidebar-divider {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 20px 0;
+}
+
+/* BUDŽET INPUTI */
+.budget-inputs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.budget-inputs input[type="number"] {
+  width: calc(50% - 10px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+  transition: border 0.2s;
+}
+
+.budget-inputs input[type="number"]:focus {
+  outline: none;
+  border-color: var(--upwork-green);
+}
+
+.budget-separator {
+  color: #888;
+  font-weight: bold;
+}
+
+/* APPLY FILTER BUTTON */
+.apply-filters-btn {
+  width: 100%;
+  background-color: var(--upwork-green);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 15px;
+}
+
+.apply-filters-btn:hover {
+  background-color: #0d6e00;
+  transform: translateY(-2px);
+}
+
+/* ======================== */
+/* RESPONSIVE STILOVI        */
+/* ======================== */
+
+/* Desktop / tablet */
+@media (max-width: 1024px) {
+  .upwork-sidebar-container {
+    width: 250px;
+    padding: 20px;
+  }
+}
+
+/* Mobilni */
+@media (max-width: 768px) {
+  .upwork-sidebar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 2000;
+    transform: translateX(-110%);
+    opacity: 0;
+    background-color: #fff;
+    overflow-y: auto;
+    box-shadow: 3px 0 15px rgba(0,0,0,0.25);
+    padding: 30px 20px;
+  }
+
+  .upwork-sidebar-container.open {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  /* Dugme Apply Filter ostaje fiksno na dnu */
+  .apply-filters-btn {
+    position: sticky;
+    bottom: 20px;
+  }
+
+  /* Dugme za otvaranje filtera */
+  .mobile-filter-toggle {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2100;
+    padding: 14px 22px;
+    background-color: var(--upwork-green);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s, background-color 0.3s;
+  }
+
+  .mobile-filter-toggle:hover {
+    transform: translateY(-2px);
+    background-color: #0d6e00;
+  }
+}
+
+/* Sakrij dugme na desktopu */
+@media (min-width: 769px) {
+  .mobile-filter-toggle {
+    display: none;
+  }
+}
